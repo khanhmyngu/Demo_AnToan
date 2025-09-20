@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Tạo chữ ký cho ảnh</title>
+</head>
+<body>
+    <h2>📌 Upload ảnh để ký</h2>
+    <form method="post" enctype="multipart/form-data" action="/sign-image">
+        <p><input type="file" name="file" accept="image/*" required></p>
+        <p>Owner: <input type="text" name="owner" required></p>
+        <p>Logo ID: <input type="text" name="logoId" required></p>
+        <p><button type="submit">Ký ảnh</button></p>
+    </form>
+</body>
+</html>

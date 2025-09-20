@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang chủ - Demo An toàn bảo mật</title>
+</head>
+<body>
+    <h1>🔐 Trang chủ Demo An toàn bảo mật</h1>
+    <p>Chọn chức năng bạn muốn sử dụng:</p>
+
+    <ul>
+        <li><a th:href="@{/sign}">✍️ Tạo chữ ký (HMAC)</a></li>
+        <li><a th:href="@{/verify}">🔎 Xác minh chữ ký</a></li>
+        <li><a th:href="@{/result}">📄 Xem kết quả ký</a></li>
+    </ul>
+</body>
+</html>

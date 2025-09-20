@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Kết quả ký ảnh</title>
+</head>
+<body>
+    <h2>✅ Ảnh đã ký</h2>
+    <p>Owner: <span th:text="${owner}"></span></p>
+    <p>Logo ID: <span th:text="${logoId}"></span></p>
+    <p>Signature: <span th:text="${signature}"></span></p>
+
+    <img th:src="'data:image/png;base64,' + ${image}" alt="Ảnh đã ký"/>
+    <br><br>
+    <a href="/sign">Ký ảnh khác</a>
+</body>
+</html>
